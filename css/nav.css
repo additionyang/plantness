@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	position:relative;
+	display: inline-block;
+	margin:auto;
+}
+
+/*==============level 1==============*/
+nav li a{
+	display:block;
+	font-size:24px;
+	width:auto;
+	height: 0px;
+	line-height:18px;
+	padding-left:12px;
+	padding-right: 18px;
+	padding-bottom: 40px;
+	color: #A1A1A2;
+	text-decoration:none;
+	text-align:inherit
+}
+/*==============level 2==============*/
+nav li ul{
+    position:absolute;
+	display:none;
+    left: 0;   
+}
+
+nav ul li:hover > ul{
+    display: block;
+	cursor: pointer;
+}
+
+nav ul li:hover > a{ 
+	cursor: pointer;
+    color:rgba(255, 255, 255, 1);
+	background: rgba(114,114,114,0);
+
+}
+
+nav ul ul a{
+	font-size:22px;
+	width:169px;
+	padding-top: 12px;
+	padding-bottom: 15px;
+	line-height:24px;
+    color:rgba(150,150,150,1.00);
+	background: rgba(131,131,131,0);
+
+}
+
+nav ul ul a:hover{
+	color: rgba(104,104,104,1.00);
+	background: rgba(255, 255, 255, 0);
+
+}
+
+
